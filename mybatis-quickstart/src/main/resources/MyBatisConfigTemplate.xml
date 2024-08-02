@@ -8,7 +8,6 @@
         <!--  日志  -->
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
-
     <!-- environments表示配置Mybatis的开发环境，可以配置多个环境，
   使用default属性指定实际运行时使用的环境。default属性的取值是
   environment标签的id属性的值。 -->
@@ -30,6 +29,6 @@
 
     <mappers>
         <!--从类路径开始进行指定位置-->
-        <mapper resource=""/>
+        <mapper resource="mappers/EmployeeMapper.xml"/>
     </mappers>
 </configuration>

@@ -33,6 +33,7 @@
 
     <mappers>
         <!--从类路径开始进行指定位置-->
-        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/OrderMapper.xml"/>
+        <mapper resource="mapper/CustomerMapper.xml"/>
     </mappers>
 </configuration>
