@@ -1,14 +1,15 @@
-
+#project setting
 .idea
-
-
-out
-
-target
-
 *.iml
 
+
+#database
 jdbc.properties
-
-
 MyBatisConfig.xml
+
+#output
+out
+target
+
+#log
+*.log
