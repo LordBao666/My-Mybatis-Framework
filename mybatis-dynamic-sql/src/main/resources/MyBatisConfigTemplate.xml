@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <!--  日志  -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 数据库到Java实体类的驼峰式映射       -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- environments表示配置Mybatis的开发环境，可以配置多个环境，
+  使用default属性指定实际运行时使用的环境。default属性的取值是
+  environment标签的id属性的值。 -->
+    <environments default="development">
+        <!-- environment表示配置Mybatis的一个具体的环境 -->
+        <environment id="development">
+            <!-- Mybatis内置的事务管理器 -->
+            <transactionManager type="JDBC"/>
+            <!--数据源配置-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/{schemaName}?allowMultiQueries=true"/>
+                <property name="username" value="{username}"/>
+                <property name="password" value="{password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+        <!--从类路径开始进行指定位置-->
+        <mapper resource="mapper/EmployeeMapper.xml"/>
+    </mappers>
+</configuration>

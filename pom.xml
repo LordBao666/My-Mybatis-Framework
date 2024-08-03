@@ -12,6 +12,7 @@
         <module>mybatis-quickstart</module>
         <module>mybatis-curd-practice</module>
         <module>mybatis-multiple-table</module>
+        <module>mybatis-dynamic-sql</module>
     </modules>
 
     <properties>
