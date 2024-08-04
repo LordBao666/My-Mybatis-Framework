@@ -6,3 +6,4 @@ A repository about learning Mybatis Framework
 - 基本使用: mybatis-curd-practice
 - 多表查询: mybatis-multiple-table
 - 动态SQL: mybatis-dynamic-sql
+- 高阶特性: mybatis-advanced-features

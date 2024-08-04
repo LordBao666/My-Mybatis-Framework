@@ -13,6 +13,7 @@
         <module>mybatis-curd-practice</module>
         <module>mybatis-multiple-table</module>
         <module>mybatis-dynamic-sql</module>
+        <module>mybatis-advanced-features</module>
     </modules>
 
     <properties>
@@ -53,6 +54,15 @@
                 <version>1.18.34</version>
                 <scope>provided</scope>
             </dependency>
+
+
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>6.1.0</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
